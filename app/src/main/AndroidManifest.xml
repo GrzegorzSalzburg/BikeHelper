@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bikehelper_mobileapp_project">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bikeicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_bikeicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BikeHelper_MobileApp_Project">
+        <activity
+            android:name=".BikeList"
+            android:exported="false" />
+        <activity
+            android:name=".BikeAddition"
+            android:exported="false" />
+        <activity
+            android:name=".DBHelper"
+            android:exported="false" />
+        <activity
+            android:name=".BikeCategories"
+            android:exported="false" />
+        <activity
+            android:name=".QRScanner"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
