@@ -37,8 +37,8 @@ class BikeAddition : AppCompatActivity() {
             var helper=DBHelper(applicationContext)
             var db=helper.readableDatabase
 
-            db?.execSQL("INSERT INTO BIKEDESCRIPTION(BRANDNAME, MODELTYPE, COLOR) VALUES ("+brandNameVal+","+modelNameVal+","+bikeColorVal+")")
-            db?.execSQL("INSERT INTO BIKES(BIKECODE, BIKETYPE) VALUES ("+bikeCodeVal+","+bikeTypeVal+")")
+            db?.execSQL("INSERT INTO BIKEDESCRIPTION(BRANDNAME, MODELTYPE, COLOR) VALUES ('"+brandNameVal+"','"+modelNameVal+"','"+bikeColorVal+"')")
+            db?.execSQL("INSERT INTO BIKES(BIKECODE, BIKETYPE) VALUES ('"+bikeCodeVal+"','"+bikeTypeVal+"')")
 
         }
     }
