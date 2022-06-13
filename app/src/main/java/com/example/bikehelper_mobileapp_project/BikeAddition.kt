@@ -1,5 +1,6 @@
 package com.example.bikehelper_mobileapp_project
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -33,13 +34,15 @@ class BikeAddition : AppCompatActivity() {
         if (bikeCodeVal.isNullOrEmpty()||bikeTypeVal.isNullOrEmpty()||brandNameVal.isNullOrEmpty()||modelNameVal.isNullOrEmpty()||bikeColorVal.isNullOrEmpty())
             Toast.makeText(applicationContext, "All the fields have to be filled", Toast.LENGTH_SHORT).show()
         else {
-            Toast.makeText(applicationContext, "Added bike to Db", Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext, "Added bike to Db", Toast.LENGTH_SHORT).show()
             var helper=DBHelper(applicationContext)
             var db=helper.readableDatabase
 
             db?.execSQL("INSERT INTO BIKEDESCRIPTION(BRANDNAME, MODELTYPE, COLOR) VALUES ('"+brandNameVal+"','"+modelNameVal+"','"+bikeColorVal+"')")
             db?.execSQL("INSERT INTO BIKES(BIKECODE, BIKETYPE) VALUES ('"+bikeCodeVal+"','"+bikeTypeVal+"')")
 
+            val intent = Intent(this,QRScanner::class.java)
+            startActivity(intent)
         }
     }
 }

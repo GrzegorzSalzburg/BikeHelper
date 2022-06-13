@@ -24,4 +24,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this,BikeCategories::class.java)
         startActivity(intent)
     }
+
+    fun bikeSearch(view:View){
+        val intent = Intent(this,BikeSearch::class.java)
+        startActivity(intent)
+    }
 }

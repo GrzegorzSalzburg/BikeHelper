@@ -55,7 +55,7 @@
         android:drawableStart="@mipmap/ic_search"
         android:insetTop="0dp"
         android:insetBottom="0dp"
-        android:onClick="bikeQRScanner"
+        android:onClick="bikeSearch"
         android:text="Find bike from Db"
         android:textAllCaps="false"
         android:textColor="@color/black"

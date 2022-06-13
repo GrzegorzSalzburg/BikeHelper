@@ -12,20 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BikeHelper_MobileApp_Project">
         <activity
+            android:name=".BikeSearch"
+            android:exported="false" />
+        <activity
             android:name=".BikeList"
             android:exported="false" />
         <activity
             android:name=".BikeAddition"
             android:exported="false" />
         <activity
-            android:name=".DBHelper"
-            android:exported="false" />
-        <activity
             android:name=".BikeCategories"
             android:exported="false" />
         <activity
             android:name=".QRScanner"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
