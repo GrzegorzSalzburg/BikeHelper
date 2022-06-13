@@ -2,11 +2,8 @@ package com.example.bikehelper_mobileapp_project
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.ListView
-import android.widget.SearchView
+import android.widget.*
 import android.widget.SearchView.OnQueryTextListener
-import android.widget.TextView
 import androidx.core.content.ContextCompat
 
 class BikeSearch : AppCompatActivity() {
@@ -20,18 +17,6 @@ class BikeSearch : AppCompatActivity() {
 
         supportActionBar?.hide()
         window.statusBarColor = ContextCompat.getColor(this, R.color.darkgrey)
-
-        searchView=findViewById(R.id.sV_search)
-        searchView.clearFocus()
-        searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
-            override fun onQueryTextSubmit(p0: String?): Boolean {
-                TODO("Not yet implemented")
-            }
-
-            override fun onQueryTextChange(p0: String?): Boolean {
-                TODO("Not yet implemented")
-            }
-        })
 
         var helper = DBHelper(applicationContext)
         var db = helper.readableDatabase
@@ -49,7 +34,22 @@ class BikeSearch : AppCompatActivity() {
         val listViewVal = findViewById<ListView>(R.id.searchlist)
         listViewVal.adapter = adapter
 
+        searchView=findViewById(R.id.sV_search)
+        searchView.clearFocus()
+        searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(p0: String?): Boolean {
+                if(arrayAllBikes.contains(p0)){
+                    adapter.filter.filter(p0)
+                } else {
+                    Toast.makeText(applicationContext, "No match", Toast.LENGTH_SHORT).show()
+                }
+                return false
+            }
+            override fun onQueryTextChange(p0: String?): Boolean {
+                adapter.filter.filter(p0)
+                return false
+            }
+        })
+
     }
-
-
 }
