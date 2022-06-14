@@ -9,7 +9,7 @@
     <com.budiyev.android.codescanner.CodeScannerView
         android:id="@+id/QRScannerView"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="500dp"
         app:autoFocusButtonColor="@android:color/white"
         app:autoFocusButtonVisible="true"
         app:flashButtonColor="@android:color/white"
@@ -41,14 +41,14 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bikeQRScanner"
-        android:layout_width="130dp"
-        android:layout_height="70dp"
+        android:layout_width="164dp"
+        android:layout_height="85dp"
         android:layout_below="@id/QRScannerView"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="30dp"
         android:background="@color/white"
         android:drawableRight="@mipmap/ic_arrow"
         android:insetTop="0dp"
