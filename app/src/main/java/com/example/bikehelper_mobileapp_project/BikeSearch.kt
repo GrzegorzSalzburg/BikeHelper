@@ -36,6 +36,7 @@ class BikeSearch : AppCompatActivity() {
 
         searchView=findViewById(R.id.sV_search)
         searchView.clearFocus()
+
         searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(p0: String?): Boolean {
                 if(arrayAllBikes.contains(p0)){

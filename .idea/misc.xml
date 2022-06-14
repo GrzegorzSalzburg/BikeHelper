@@ -6,6 +6,9 @@
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/drawable/ic_update.xml" value="0.1575" />
+        <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout-land/activity_bike_addition.xml" value="0.264" />
+        <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout-land/activity_main.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout-land/activity_qrscanner.xml" value="0.264" />
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout/activity_bike_addition.xml" value="0.264" />
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout/activity_bike_categories.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout/activity_bike_list.xml" value="0.1675929884566054" />
@@ -14,6 +17,8 @@
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout/activity_qrscanner.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout/activity_splash_screen.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout/custom_color.xml" value="0.1885766092475068" />
+        <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/layout/custom_list_style.xml" value="0.1885766092475068" />
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/mipmap-anydpi-v26/ic_arrow.xml" value="0.151" />
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/mipmap-anydpi-v26/ic_bike.xml" value="0.151" />
         <entry key="..\:/Users/grzes/AndroidStudioProjects/BikeHelper_MobileApp_Project/app/src/main/res/mipmap-anydpi-v26/ic_bikeicon.xml" value="0.151" />

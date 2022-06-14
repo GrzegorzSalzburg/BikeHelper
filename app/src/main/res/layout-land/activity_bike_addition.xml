@@ -8,10 +8,12 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/AddToDb"
-        android:layout_width="181dp"
-        android:layout_height="112dp"
+        android:layout_width="167dp"
+        android:layout_height="94dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="44dp"
         android:background="@color/white"
         android:drawableRight="@mipmap/ic_arrow"
         android:insetTop="0dp"
@@ -23,19 +25,16 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bikeColortv"
         tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/bikeCodetv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:text=""
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/tv7_bikecode"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv7_bikecode"
+        app:layout_constraintStart_toEndOf="@+id/tv7_bikecode" />
 
     <EditText
         android:id="@+id/bikeTypetv"
@@ -44,7 +43,8 @@
         android:hint="Type here"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@id/tv8_biketype"
-        app:layout_constraintStart_toEndOf="@+id/tv8_biketype" />
+        app:layout_constraintStart_toEndOf="@+id/tv8_biketype"
+        tools:layout_editor_absoluteY="170dp" />
 
     <EditText
         android:id="@+id/brandNametv"
@@ -53,7 +53,8 @@
         android:hint="Type here"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@id/tv_brandname"
-        app:layout_constraintStart_toEndOf="@+id/tv_brandname" />
+        app:layout_constraintStart_toEndOf="@+id/tv_brandname"
+        tools:layout_editor_absoluteY="16dp" />
 
     <EditText
         android:id="@+id/modelNametv"
@@ -62,7 +63,8 @@
         android:hint="Type here"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@id/tv_modelname"
-        app:layout_constraintStart_toEndOf="@+id/tv_modelname" />
+        app:layout_constraintStart_toEndOf="@+id/tv_modelname"
+        tools:layout_editor_absoluteY="112dp" />
 
     <EditText
         android:id="@+id/bikeColortv"
@@ -71,49 +73,49 @@
         android:hint="Type here"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@id/tv11_bikecolor"
-        app:layout_constraintStart_toEndOf="@+id/tv11_bikecolor" />
+        app:layout_constraintStart_toEndOf="@+id/tv11_bikecolor"
+        tools:layout_editor_absoluteY="243dp" />
 
     <TextView
         android:id="@+id/tv7_bikecode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="128dp"
         android:text="Bike code: "
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_brandname"
+        app:layout_constraintStart_toEndOf="@+id/brandNametv" />
 
     <TextView
         android:id="@+id/tv8_biketype"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="32dp"
         android:text="Bike type: "
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv11_bikecolor"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv7_bikecode" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_modelname" />
 
     <TextView
         android:id="@+id/tv_brandname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="32dp"
         android:text="Brand name: "
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_modelname"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv8_biketype" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_modelname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="32dp"
         android:text="Model name: "
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv8_biketype"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_brandname" />
 
@@ -121,22 +123,11 @@
         android:id="@+id/tv11_bikecolor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="32dp"
         android:text="Bike color: "
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_modelname" />
+        app:layout_constraintTop_toBottomOf="@+id/tv8_biketype" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Bike specification"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
