@@ -28,9 +28,8 @@ class BikeList : AppCompatActivity() {
             var query = db.rawQuery("SELECT * FROM BIKES WHERE BIKETYPE LIKE "+"'mtb'", null)
             var queryst = db.rawQuery("SELECT * FROM BIKEDESCRIPTION WHERE BIKETYPE LIKE "+"'mtb'", null)
             while (query.moveToNext() && queryst.moveToNext()) {
-                var bikes = "Bike code: "+query.getString(1)+"\nBike type: "+query.getString(2)+
-                        "\nBrand name: "+queryst.getString(2)+ "\nModel name: "+queryst.getString(3)+
-                        "\nModel color: "+queryst.getString(4)
+                var bikes = "Bike code: "+query.getString(1)+ "\nBrand name: "+queryst.getString(2)+
+                        "\nModel name: "+queryst.getString(3)+ "\nModel color: "+queryst.getString(4)
                 arrayListBikeCodes.add(bikes)
             }
             //array adapter, used to drop items from arraylist of repos to list view
@@ -42,9 +41,8 @@ class BikeList : AppCompatActivity() {
             var query1 = db.rawQuery("SELECT * FROM BIKES WHERE BIKETYPE LIKE "+"'road'", null)
             var queryst1 = db.rawQuery("SELECT * FROM BIKEDESCRIPTION WHERE BIKETYPE LIKE "+"'road'", null)
             while (query1.moveToNext() && queryst1.moveToNext()) {
-                var bikes = "Bike code: "+query1.getString(1)+"\nBike type: "+query1.getString(2)+
-                        "\nBrand name: "+queryst1.getString(2)+ "\nModel name: "+queryst1.getString(3)+
-                        "\nModel color: "+queryst1.getString(4)
+                var bikes = "Bike code: "+query1.getString(1)+ "\nBrand name: "+queryst1.getString(2)+
+                        "\nModel name: "+queryst1.getString(3)+ "\nModel color: "+queryst1.getString(4)
                 arrayListBikeCodes.add(bikes)
             }
             //array adapter, used to drop items from arraylist of repos to list view
@@ -56,9 +54,8 @@ class BikeList : AppCompatActivity() {
             var query2 = db.rawQuery("SELECT * FROM BIKES WHERE BIKETYPE LIKE "+"'ebike'", null)
             var queryst2 = db.rawQuery("SELECT * FROM BIKEDESCRIPTION WHERE BIKETYPE LIKE "+"'ebike'", null)
             while (query2.moveToNext() && queryst2.moveToNext()) {
-                var bikes = "Bike code: "+query2.getString(1)+"\nBike type: "+query2.getString(2)+
-                        "\nBrand name: "+queryst2.getString(2)+ "\nModel name: "+queryst2.getString(3)+
-                        "\nModel color: "+queryst2.getString(4)
+                var bikes = "Bike code: "+query2.getString(1)+ "\nBrand name: "+queryst2.getString(2)+
+                        "\nModel name: "+queryst2.getString(3)+ "\nModel color: "+queryst2.getString(4)
                 arrayListBikeCodes.add(bikes)
             }
             //array adapter, used to drop items from arraylist of repos to list view
@@ -70,16 +67,18 @@ class BikeList : AppCompatActivity() {
             var query3 = db.rawQuery("SELECT * FROM BIKES WHERE BIKETYPE LIKE "+"'city'", null)
             var queryst3 = db.rawQuery("SELECT * FROM BIKEDESCRIPTION WHERE BIKETYPE LIKE "+"'city'", null)
             while (query3.moveToNext()&& queryst3.moveToNext()) {
-                var bikes = "Bike code: "+query3.getString(1)+"\nBike type: "+query3.getString(2)+
-                        "\nBrand name: "+queryst3.getString(2)+ "\nModel name: "+queryst3.getString(3)+
-                        "\nModel color: "+queryst3.getString(4)
+                var bikes = "Bike code: "+query3.getString(1)+ "\nBrand name: "+queryst3.getString(2)+
+                        "\nModel name: "+queryst3.getString(3)+ "\nModel color: "+queryst3.getString(4)
                 arrayListBikeCodes.add(bikes)
             }
             //array adapter, used to drop items from arraylist of repos to list view
             val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayListBikeCodes)
             val listViewVal = findViewById<ListView>(R.id.bikeList)
             listViewVal.adapter = adapter
+
+
         }
+
 
     }
 }

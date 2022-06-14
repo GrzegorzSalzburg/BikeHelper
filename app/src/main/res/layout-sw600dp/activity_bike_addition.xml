@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BikeAddition">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AddToDb"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_arrow"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:onClick="addBike"
+        android:text="Add to Db"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bikeColortv"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/bikeCodetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv7_bikecode"
+        app:layout_constraintStart_toEndOf="@+id/tv7_bikecode"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <EditText
+        android:id="@+id/bikeTypetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Type here"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv8_biketype"
+        app:layout_constraintStart_toEndOf="@+id/tv8_biketype" />
+
+    <EditText
+        android:id="@+id/brandNametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Type here"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_brandname"
+        app:layout_constraintStart_toEndOf="@+id/tv_brandname" />
+
+    <EditText
+        android:id="@+id/modelNametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Type here"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_modelname"
+        app:layout_constraintStart_toEndOf="@+id/tv_modelname" />
+
+    <EditText
+        android:id="@+id/bikeColortv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Type here"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv11_bikecolor"
+        app:layout_constraintStart_toEndOf="@+id/tv11_bikecolor" />
+
+    <TextView
+        android:id="@+id/tv7_bikecode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Bike code: "
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/tv8_biketype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Bike type: "
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv7_bikecode" />
+
+    <TextView
+        android:id="@+id/tv_brandname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Brand name: "
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv8_biketype" />
+
+    <TextView
+        android:id="@+id/tv_modelname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Model name: "
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brandname" />
+
+    <TextView
+        android:id="@+id/tv11_bikecolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Bike color: "
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_modelname" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Bike specification"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
