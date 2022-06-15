@@ -32,7 +32,7 @@ class BikeList : AppCompatActivity() {
                         "\nModel name: "+queryst.getString(3)+ "\nModel color: "+queryst.getString(4)
                 arrayListBikeCodes.add(bikes)
             }
-            //array adapter, used to drop items from arraylist of repos to list view
+            //array
             val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayListBikeCodes)
             val listViewVal = findViewById<ListView>(R.id.bikeList)
             listViewVal.adapter = adapter
@@ -45,7 +45,7 @@ class BikeList : AppCompatActivity() {
                         "\nModel name: "+queryst1.getString(3)+ "\nModel color: "+queryst1.getString(4)
                 arrayListBikeCodes.add(bikes)
             }
-            //array adapter, used to drop items from arraylist of repos to list view
+            //array
             val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayListBikeCodes)
             val listViewVal = findViewById<ListView>(R.id.bikeList)
             listViewVal.adapter = adapter
@@ -58,7 +58,7 @@ class BikeList : AppCompatActivity() {
                         "\nModel name: "+queryst2.getString(3)+ "\nModel color: "+queryst2.getString(4)
                 arrayListBikeCodes.add(bikes)
             }
-            //array adapter, used to drop items from arraylist of repos to list view
+            //array
             val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayListBikeCodes)
             val listViewVal = findViewById<ListView>(R.id.bikeList)
             listViewVal.adapter = adapter
@@ -71,7 +71,7 @@ class BikeList : AppCompatActivity() {
                         "\nModel name: "+queryst3.getString(3)+ "\nModel color: "+queryst3.getString(4)
                 arrayListBikeCodes.add(bikes)
             }
-            //array adapter, used to drop items from arraylist of repos to list view
+            //array adapter
             val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayListBikeCodes)
             val listViewVal = findViewById<ListView>(R.id.bikeList)
             listViewVal.adapter = adapter

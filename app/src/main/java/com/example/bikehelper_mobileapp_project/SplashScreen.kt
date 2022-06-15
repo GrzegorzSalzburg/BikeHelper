@@ -8,7 +8,7 @@ import androidx.core.content.ContextCompat
 
 class SplashScreen : AppCompatActivity() {
 
-    private lateinit var ivnote: ImageView
+    private lateinit var ivpicture: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,9 +17,9 @@ class SplashScreen : AppCompatActivity() {
         supportActionBar?.hide()
         window.statusBarColor = ContextCompat.getColor(this, R.color.white)
 
-        ivnote = findViewById(R.id.iv_note)
-        ivnote.alpha=0f
-        ivnote.animate().setDuration(1500).alpha(1f).withEndAction {
+        ivpicture = findViewById(R.id.iv_picture)
+        ivpicture.alpha=0f
+        ivpicture.animate().setDuration(1500).alpha(1f).withEndAction {
             val i = Intent(this, MainActivity::class.java)
             startActivity(i)
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)

@@ -44,8 +44,7 @@ class QRScanner : AppCompatActivity() {
         val duration = Toast.LENGTH_SHORT
 
         if(textView.text.isEmpty()){
-            val toast = Toast.makeText(applicationContext, text, duration)
-            toast.show()
+             Toast.makeText(applicationContext, text, duration).show()
         } else  {
             val index = textView.text.toString()
             val intent = Intent(this, BikeAddition::class.java).apply {

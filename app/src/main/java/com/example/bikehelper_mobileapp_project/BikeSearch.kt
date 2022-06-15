@@ -29,7 +29,7 @@ class BikeSearch : AppCompatActivity() {
                     "\nModel color: "+queryst.getString(4)
             arrayAllBikes.add(bikes)
         }
-        //array adapter, used to drop items from arraylist of repos to list view
+        //array adapter
         val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayAllBikes)
         val listViewVal = findViewById<ListView>(R.id.searchlist)
         listViewVal.adapter = adapter
